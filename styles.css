@@ -1,7 +1,9 @@
 /* Style sheet*/
 .container{
-padding: 38px;
+margin:0;
+padding: 35px;
 }
+/*Navigation style*/
 .nav-wrapper{
     display:flex;
     justify-content: space-between;
@@ -31,4 +33,55 @@ padding: 38px;
     border-bottom: 1px solid black;
     color:black;
 
+}
+
+/*Portfolio style*/
+
+.content-wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.portfolio-items-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.portfolio-item-wrapper{
+    position: relative;
+}
+.img-background-wrapper{
+    height: 350px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.imgText-wrapper{
+    position: absolute;
+    top:0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.imgLogo-wrapper img{
+    width: 50%;
+    margin-bottom: 20px;
+}
+/*
+.subtitle{
+    font-weight: 600;
+    color: lightseagreen;
+}*/
+.imgText-wrapper:hover .subtitle{
+    font-weight: 600;
+    color: hotpink;
+}
+.imgText-wrapper .subtitle{
+    transition: 1s;
+    font-weight: 600;
+    color: transparent;
 }
