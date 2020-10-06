@@ -7,7 +7,7 @@
     <link rel="stylesheet"href="./styles.css">
 </head>
 <body>
-    <div class="container">
+      <div class="container">
             <!--Navigation -->
             <div class="nav-wrapper">
                     <div class="left-nav-wrapper">
@@ -184,6 +184,28 @@
  
 
             </div>
-    </div>
+           </div>
+        </div>
 </body>
+<!--JS to fade out the color-->
+ <script>
+   const portfolioItems=document.querySelectorAll('.portfolio-item-wrapper');
+   portfolioItems.forEach(pt =>{
+
+
+           pt.addEventListener('mouseover',function(){
+           pt.childNodes[1].classList.add('img-darken')
+
+           });
+   })
+   portfolioItems.forEach(pt =>{
+           pt.addEventListener('mouseout',function(){
+           pt.childNodes[1].classList.remove('img-darken')
+
+           });
+
+   })
+
+ 
+</script>
 </html>

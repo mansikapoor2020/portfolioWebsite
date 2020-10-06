@@ -1,6 +1,8 @@
 /* Style sheet*/
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 body{
     margin:0;
+    font-family: 'Lato', sans-serif;
 }
 .container{
  display: grid;
@@ -85,10 +87,32 @@ body{
 }*/
 .imgText-wrapper:hover .subtitle{
     font-weight: 600;
-    color: hotpink;
+    color: aquamarine;
 }
 .imgText-wrapper .subtitle{
     transition: 1s;
     font-weight: 600;
     color: transparent;
+}
+
+.img-darken{
+transition: 1s;
+filter: brightness(10%);
+
+}
+
+/* About us page css*/
+.two-colum-wrapper{
+    display: grid;
+    grid-template-columns: 1Fr 1Fr;
+}
+.portfolio-img-wrapper img{ 
+    width:100%;
+}
+.portfolio-content-wrapper{
+padding: 30px;
+    }
+.portfolio-content-wrapper h1{
+
+color: seagreen;
 }
